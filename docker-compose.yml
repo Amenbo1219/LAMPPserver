@@ -1,6 +1,4 @@
 version: '3.1'
-volumes:
-  db-volume:
 
 services:
   web:
@@ -18,6 +16,14 @@ services:
     build: ./php
     volumes :
       - ./html:/var/www/html
+  
+  python:
+    restart: always
+    build: ./python
+    tty: true
+    volumes :
+      - ./html:/var/www/html
+    
 
   db:
     image: mysql:5.7
@@ -28,7 +34,8 @@ services:
       MYSQL_ROOT_PASSWORD: PASSWORD
       TZ: "Asia/Tokyo"
     volumes:
-      - db-volume:/etc/mysql/
+      - ./docker/mysql:/var/lib/mysql
+  
 
   phpmyadmin:
     image: phpmyadmin:latest
@@ -42,3 +49,7 @@ services:
       - PMA_HOSTS=db
       - PMA_USER=root
       - PMA_PASSWORD=PASSWORD
+    volumes:
+      - ./docker/phpmyadmin/sessions:/sessions
+
+

@@ -1,22 +1,22 @@
-# LAMPPserver
-This is LAMPPserver on Docker-compose
+# LEMPPserver
+This is LEMPPserver on Docker-compose
 nginx,phpmyadmin,Php,Python
 # Howto
 Unpack on LocalHostServer
-Use ports 80,88,8088 
+Use ports 80,88,8080 
 Set htmlScript on ./html
 Set phpScropt on ./html/site/list
 * localhost:80 HTML&CSS&JSserver
 * localhost:88 Phpsupportserver
-* localhost:8088 phpmyadminController
+* localhost:8080 phpmyadminController
 
 # Specs
 Making docker images on Ubuntu-Desktop22.04 but maybe used on WSL and MacOS
 
-* OS:Ubuntu22.04orMacOS Catalina orWindows10 18H2 on WSL
-* CPU:2Cores on Intelx86orAMD64Prosessor (Not support Arm64Chips)
+* OS:Ubuntu22.04
+* CPU:2Cores on Intelx６４orAMD64Prosessor (Not support Arm64Chips)
 * Memory:4GB(8GB)
-* Storage:256GB(10GB FreeSpace)
+* Storage:１５０GB(10GB FreeSpace)
 *  Special:
     Installed Docker and Docker-compose and Browser(GoogleChorme)
 # Instration
@@ -30,9 +30,9 @@ $ cd LAMPPserver/
 ```
 Docker & Docker-compose check
 ```sh
-$ Docker -v 
+$ docker -v 
 Docker version 20.10.12, build e91ed57
-$ Docker-compose -v
+$ docker-compose -v
 docker-compose version 1.29.2, build 5becea4c
 ```
 Docker-compose up 

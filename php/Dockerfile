@@ -1,4 +1,9 @@
-FROM php:8.0-fpm
+FROM php:7.4-fpm
+
+
+# install Drivers
+RUN apt-get update && \
+  docker-php-ext-install mysqli pdo_mysql
 
 # install configure file
 RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
