@@ -1,6 +1,6 @@
 # LEMPPserver
 This is LEMPPserver on Docker-compose
-nginx,phpmyadmin,Php,Python
+nginx,MySQL(phpmyadmin),Php,Python
 # Howto
 Unpack on LocalHostServer
 Use ports 80,88,8080 
