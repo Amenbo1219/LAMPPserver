@@ -16,19 +16,19 @@ Set phpScropt on ./html/site/list
 Making docker images on Ubuntu-Desktop22.04 but maybe used on WSL and MacOS
 
 * OS:Ubuntu22.04
-* CPU:2Cores on Intelx６４orAMD64Prosessor (Not support Arm64Chips)
+* CPU:2Cores on Intelx64orAMD64Prosessor (Not support Arm64Chips)
 * Memory:4GB(8GB)
-* Storage:１５０GB(10GB FreeSpace)
+* Storage:150GB(10GB FreeSpace)
 *  Special:
     Installed Docker and Docker-compose and Browser(GoogleChorme)
 # Instration
 Git clone this project
 ```sh
-$ git clone  https://github.com/Amenbo1219/LAMPPserver.git
+$ git clone  https://github.com/Amenbo1219/LEMPPserver.git
 ```
 CangeDirectory
 ```sh
-$ cd LAMPPserver/
+$ cd LEMPPserver/
 ```
 Docker & Docker-compose check
 ```sh
@@ -40,9 +40,9 @@ docker-compose version 1.29.2, build 5becea4c
 Docker-compose up 
 ```sh
 $ docker-compose up -d
-Creating network "lamppserver_default" with the default driver
+Creating network "lemppserver_default" with the default driver
 ・・・
-Creating lamppserver_phpmyadmin_1 ... done
+Creating lemppserver_phpmyadmin_1 ... done
 ```
 Check Docker logs 
 ```sh
